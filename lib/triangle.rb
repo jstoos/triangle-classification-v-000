@@ -12,8 +12,8 @@ attr_accessor :equilateral, :isosceles, :scalene, :length1, :length2, :length3
     if not_a_triangle
         begin
           raise TriangleError
-        rescue TriangleError => error
-          puts error.message
+        # rescue TriangleError => error
+        #   puts error.message
         end
     elsif @length1 == @length2 && @length3 == @length2
       :equilateral
